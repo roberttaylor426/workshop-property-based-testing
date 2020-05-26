@@ -66,7 +66,7 @@ test("should be distributive", () => {
         var first = a * add([b, c]);
         var second = add([a * b, a * c]);
 
-        expect(first).toEqual(second);
+        expect(0 + first).toEqual(0 + second);
       }
     )
   );

@@ -1,9 +1,11 @@
 export function add(numbers: number[]) {
-  const result = numbers[0] + numbers[1];
+    const result = numbers.reduce((acc, n) => {
+        return acc + n;
+    }, 0);
 
-  if (Number.isSafeInteger(result)) {
-    return result;
-  }
+    if (Number.isSafeInteger(result)) {
+        return result;
+    }
 
-  throw "too big";
+    throw "too big";
 }

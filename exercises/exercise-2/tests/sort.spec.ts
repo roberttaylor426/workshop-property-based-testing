@@ -4,6 +4,11 @@ it("should sort", () => {
   expect(sort([1, 2, 4, 5, 3])).toEqual([1, 2, 3, 4, 5]);
 });
 
+it("should sort 2 nums", () => {
+  expect(sort([2, 1])).toEqual([1, 2]);
+});
+
+
 it("should be ok with just 1 number", () => {
   expect(sort([1])).toEqual([1]);
 });
